@@ -1,0 +1,23 @@
+# Git 保持文件
+# 此文件用于确保空目录被 git 追踪
+# 当使用 git submodule 时，此目录将用于存放子模块代码
+
+## 目录结构示例
+
+```
+codes/
+├── admin/          # 管理端代码
+├── service/        # 服务端代码
+├── web/            # Web前端代码
+├── mobile/         # 移动端代码
+├── shared/         # 共享代码/公共库
+└── scripts/        # 脚本工具
+```
+
+说明：
+- admin    - 管理后台系统代码
+- service  - 后端服务代码（API、业务逻辑）
+- web      - Web前端应用代码
+- mobile   - 移动端应用代码（iOS/Android）
+- shared   - 多个项目共享的代码库
+- scripts  - 构建、部署、数据迁移等脚本

@@ -33,18 +33,22 @@ export default withMermaid(defineConfig(withSidebar({
     ],
   
   },
-  vite:{
-    optimizeDeps:{
-      include:['mermaid','dayjs'],
-      exclude:[]
+  vite: {
+    optimizeDeps: {
+      include: [
+        "mermaid",
+        "dayjs",
+        "debug",
+        "@braintree/sanitize-url",
+        "cytoscape",
+        "cytoscape-cose-bilkent",
+      ],
+      exclude: ["vitepress"],
     },
-    ssr:{
-      noExternal:['mermaid']
-    }
   },
-  mermaid: {},
-  mermaidPlugin:{
-    class:"mermaid"
+  mermaid: {
+    // Mermaid 配置选项
+   
   }
 },{
 

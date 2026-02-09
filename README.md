@@ -69,6 +69,11 @@ graph TB
 **协议结构**：
 ```
 pdta-protocol/
+├── codes/                     # 代码仓库（可选，通过 git submodule 管理）
+│   ├── server/               # 服务端代码仓库
+│   ├── mobile/               # 移动端代码仓库
+│   ├── admin/                # 管理端代码仓库
+│   └── ...                   # 其他代码仓库
 ├── docs/                      # 规范文档
 │   ├── product/              # 产品文档规范
 │   ├── requirement/          # 需求管理规范（PRD/TDD/TEST）
@@ -78,6 +83,7 @@ pdta-protocol/
 ├── .cursor/
 │   ├── rules/                # 协议规则（文档架构规范）
 │   └── skills/               # AI协议技能（生成/验证）
+├── .gitmodules                # Git 子模块配置文件（配置 codes/ 下的代码仓库）
 ├── package.json
 └── README.md
 ```
