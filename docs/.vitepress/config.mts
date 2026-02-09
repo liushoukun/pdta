@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
-import { withMermaid } from 'vitepress-plugin-mermaid'
 import { withSidebar } from 'vitepress-sidebar';
+
 // https://vitepress.dev/reference/site-config
-export default withMermaid(defineConfig(withSidebar({
+export default defineConfig(withSidebar({
   title: "PDTA Protocol - 产研测AI同频协议",
   description: "Product-Development-Test-AI Alignment Protocol | 产研测AI同频协议规范体系",
   themeConfig: {
@@ -45,10 +45,6 @@ export default withMermaid(defineConfig(withSidebar({
       ],
       exclude: ["vitepress"],
     },
-  },
-  mermaid: {
-    // Mermaid 配置选项
-   
   }
 },{
 
@@ -60,4 +56,4 @@ export default withMermaid(defineConfig(withSidebar({
     useFolderLinkFromIndexFile: true,      // ⭐ 关键：让文件夹可点击
     sortMenusByFrontmatterOrder: true
 
-})))
+}))

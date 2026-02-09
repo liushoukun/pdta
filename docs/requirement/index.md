@@ -49,7 +49,7 @@ status: draft | review | approved | development | testing | published
 ### 需求流程
 
 ```mermaid
-graph LR
+graph TD
     A[需求提出] --> B[需求评估]
     B --> C{是否批准}
     C -->|是| D[编写PRD]

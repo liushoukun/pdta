@@ -143,6 +143,29 @@ PDTA Protocol 是一个开放的协议规范体系，欢迎共同完善！
 
 ---
 
+## 🔄 协议流程示意
+
+下面是 PDTA 协议的核心流程图，展示了从需求到交付的完整流转过程：
+
+```mermaid
+graph LR
+    A[产品PRD] -->|技术评审| B[研发TDD]
+    B -->|用例设计| C[测试TEST]
+    C -->|验收通过| D[交付上线]
+    D -->|反馈优化| A
+    
+    A -.AI协议生成.-> A1[AI辅助PRD]
+    B -.AI协议生成.-> B1[AI辅助TDD]
+    C -.AI协议生成.-> C1[AI辅助TEST]
+    
+    style A fill:#e1f5ff
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e9
+```
+
+---
+
 <p align="center">
   <strong>PDTA Protocol - 产研测AI同频协议规范体系</strong><br>
   Product-Development-Test-AI Alignment Protocol

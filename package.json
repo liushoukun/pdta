@@ -7,8 +7,8 @@
     "debug": "^4.4.3",
     "mermaid": "^11.12.2",
     "vitepress": "^1.6.4",
+    "vitepress-mermaid-renderer": "^1.1.8",
     "vitepress-plugin-mermaid": "^2.0.17",
-    "vitepress-plugin-mermaid-pan-zoom": "^1.0.2",
     "vitepress-sidebar": "^1.31.1"
   },
   "scripts": {
